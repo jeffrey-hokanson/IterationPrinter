@@ -1,4 +1,4 @@
-# IterPrinter: A simple iteration history printer
+# IterationPrinter: A simple iteration history printer
 
 When using iterative numerical algorithms it is common
 to print after each iteration a message so that a user
