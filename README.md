@@ -3,7 +3,9 @@
 When using iterative numerical algorithms it is common
 to print after each iteration a message so that a user
 can monitor convergence and catch any bugs.
-For example, in the demo.py file 
+As an example, `demo.py` implements a simple bisection algorithm
+for computing the square root of two. 
+The following is the output using this library:
 
 ```
  iter │   b - a    │    f(c)    │        a         │        b         │
@@ -22,4 +24,3 @@ For example, in the demo.py file
    11 │  1.953e-03 │  2.336e-03 │ 1.4140625000e+00 │ 1.4160156250e+00 │
 ``` 
 
-A simple iteration history printer
