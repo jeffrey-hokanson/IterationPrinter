@@ -23,7 +23,7 @@ config:
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 20
+  rows: 15
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -139,3 +139,5 @@ records:
     content: "    9 │  7.812e-03 │  1.064e-02 │ 1.4140625000e+00 │ 1.4218750000e+00 │\r\n"
   - delay: 523
     content: "   10 │  3.906e-03 │  5.100e-03 │ 1.4140625000e+00 │ 1.4179687500e+00 │\r\n"
+  - delay: 50
+    content: "> "
