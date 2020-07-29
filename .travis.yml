@@ -1,0 +1,16 @@
+
+install:
+ - python3 setup.py install
+
+script:
+ - pytest tests/
+
+deploy:
+  distributions: "sdist"
+  on:
+    branch: master
+    tags: true
+  provider: pypi
+  username: __token__
+  password:
+    secure: fDXygpXGJnQ4cUilYEL453/HqNzhZNFombRv1FfAWuEYHeIgvf1WYg6DG/hrb3h7gGuwnBb6PwXj2Sfa8mrZudACrIU4MD2FVir2KXq59H14y6xC9222HBCKKDuSfbc11of6d9beWCizaEkfcIA9aj7Qe6JH8SEi7uUCphBoPddhZKJNUUw6BK6cma0UUXqh7DFja0LUBxET+HuEPtvJN2M5PCNW2OaYoawRav/jymRciA9gHN8gPWNCOyJElVjMc6XSxmYzr1hhaIeE8XMp7D+mF0jfFndeRsVY7iJrOfFwMNzzvhooREPqd31Gl/fA3YNJq0lOEACYaZJC2wXmaS0hjC5W2cC1tpJHRHGkw80Sr4omkPMA3FeLaLJ8kIQ0yDgTkT0+WesS/DnL6Ck3WsfoknGIuK5JL4wtazcIcBXS2zYSXuUjOWgodb8Iw+Ta9G1MALgMnqF8rH48bUjMRZGUeHCGOnI177M0myxD1QUkT0B3l6uIVrI/paJ+oYmeYK6UkWn8SfIJJ3x21rwwj/UfaLJ7HhYOAGP4MrLn2jH02NgdxBkssyfMtbhmg4B7yIsCEyij7OZxXdc9M43c8YYFAu7uJZQVbuSqnucat2wc8SmaJJgsEpm4nJ/ozquNexrsKVer2Yeace/J/xn+Kt/ISjRxobKo/rsE3wIShNY=
