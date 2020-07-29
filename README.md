@@ -1,4 +1,5 @@
 # IterationPrinter: A simple iteration history printer
+[![PyPI version](https://badge.fury.io/py/iterprinter.svg)](https://pypi.org/project/iterprinter/)
 
 When using iterative numerical algorithms it is common
 to print after each iteration a message so that a user
