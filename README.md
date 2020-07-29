@@ -1,9 +1,11 @@
-# IterPrinter: A simple iteration history printer
+# IterationPrinter: A simple iteration history printer
 
 When using iterative numerical algorithms it is common
 to print after each iteration a message so that a user
 can monitor convergence and catch any bugs.
-For example, in the demo.py file 
+As an example, `demo.py` implements a simple bisection algorithm
+for computing the square root of two. 
+The following is the output using this library:
 
 <p align="center"><img src="/demo.gif?raw=true"/></p>
 
