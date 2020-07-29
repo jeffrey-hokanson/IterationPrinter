@@ -13,6 +13,7 @@ install:
  - python3 setup.py install
 
 script:
+ - pip3 freeze --local
  - pytest tests/
 
 deploy:
