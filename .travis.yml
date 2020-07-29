@@ -1,4 +1,6 @@
 
+language: python
+
 matrix:
   include:
   - os: linux
@@ -7,6 +9,7 @@ matrix:
 
 
 install:
+ - pip3 install -U pytest pytest-cov coveralls
  - python3 setup.py install
 
 script:
