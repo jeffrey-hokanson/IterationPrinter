@@ -55,6 +55,8 @@ class IterationPrinter:
 		line = ''
 		for key in self.columns:
 			try:
+				if kwargs[key] is None:
+					raise KeyError
 				line += f' {kwargs[key]:{self.columns[key]["fmt"]}} \u2502'
 			except KeyError:
 				# If the data isn't provided for the current line, leave it blank

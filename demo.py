@@ -1,7 +1,7 @@
 from iterprinter import *
 
 
-def bisection(f, a, b):
+def bisection(f, a, b, maxiter = 50):
 	r""" Compute a root of on [a,b] using the bisection method
 	
 	NOTE: This is purely a toy example to demonstrate the IterationPrinter.
@@ -18,7 +18,7 @@ def bisection(f, a, b):
 	# We then print a header message, providing information on what these variables are
 	printer.print_header(it = 'iter', width = 'b - a', fc = 'f(c)', a = 'a', b = 'b')
 
-	for it in range(50):
+	for it in range(maxiter):
 		c = (a + b)/2.
 		fc = f(c)
 
@@ -41,5 +41,10 @@ def bisection(f, a, b):
 
 if __name__ == '__main__':
 	# Compute the square root of two
-	f = lambda x: x**2 - 2.
-	bisection(f, 0, 4)	
+	import time
+
+	def fun(x):
+		time.sleep(0.5)
+		return x**2 - 2.
+
+	bisection(fun, 0, 4, maxiter = 11)	
