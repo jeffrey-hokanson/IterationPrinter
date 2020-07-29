@@ -33,7 +33,7 @@ def get_version(rel_path):
 
 
 setup(name='iterprinter',
-	version=get_version("package/__init__.py"),
+	version=get_version("iterprinter/__init__.py"),
 	description = 'An iteration history printer',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
